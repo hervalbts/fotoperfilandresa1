@@ -1,0 +1,146 @@
+
+:root {
+    --amarelo: #FFD700;
+    --verde: #98FF98;
+    --rosa: #FF007F;
+    --azul-claro: #89CFF0;
+    --cinza-chumbo: #2C2C2C;
+    --verde-claro: #98FF98;
+    --cinza: #F5F5F5;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: radial-gradient(var(--rosa), var(--rosa));
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    color: var(--rosa); /* Azul */
+    font-size: 2em;
+    margin-bottom: 40px;
+    line-height: 1em;
+}
+
+h2 {
+    color: var(--cinza-chumbo); /* Cinza Chumbo */
+}
+
+/* Pré-visualização da imagem e twibbon */
+.image-preview {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.profile {
+    width: 90%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.twibbon {
+    width: 90%; 
+    position: absolute;
+    left: 5%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    border: 1px var(--verde) solid;
+}
+
+/* Estilização do input de upload */
+input[type="file"] {
+    margin: 20px 0;
+    padding: 10px 2px;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+input[type="file"]:hover {
+    background-color: var(--verde);
+}
+
+/* Estilo das opções de twibbon */
+.twibbon-options img {
+    width: 25%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    margin: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.twibbon-options img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-color: var(--amarelo);
+}
+
+/* Botão de download */
+button {
+    background-color: var(--verde-claro);
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 40px 0;
+}
+
+button:hover {
+    background-color: var(--azul-claro);
+    color:white;
+}
+
+.cinza {
+    display: block;
+    margin-top: 40px;
+    font-size: 0.6em;
+    color: #777;
+}
+
+@media (min-width: 1024px) {
+    input[type="file"] {
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+}
+
+.logotipo {
+    max-width: 160px;
+    height: auto;
+    margin:20px 0 0 0;
+    text-align: center;
+}
+```

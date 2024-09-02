@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40.000</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+    <meta name="description" content="Mostre seu apoio a ANDRESA FURINI com uma imagem de perfil personalizada!">
+    <meta name="keywords" content="Andresa Furini, Eleições 2024, VOTE 40000, Vereadora Batatais, Campanha política, PSB, Câmara Municipal Batatais, Política local, Silvio Almeida, Beto Tofeti, #TôComAndresa, Desenvolvimento Batatais, Legislação Municipal">
+    <meta property="og:image" itemprop="image" content="modelo.png" />
+</head>
+<body>
+    <article class="container">
+        <img class="logotipo" src="logo.png"></img>
+        <p style="font-size: 1.5em; font-weight: bold; color: var(--rosa); margin: 10px 0;">VOTE 40.000</p>
+        <h1>#Tô Com<br><span style="font-size:1.4em;">ANDRESA FURINI</span></h1>
+        <h2 style="margin-bottom: 10px;">1. Envie uma foto de perfil:</h2>
+        <small style="color:gray;display:block;">Fotos quadradas funcionam melhor</small>
+        <input type="file" id="upload" accept="image/*" onchange="loadImage(event)">
+        
+        <h2>2. Escolha uma moldura:</h2>
+        <div class="twibbon-options">
+            <img src="opcao1.png" alt="Twibbon 1" onclick="selectTwibbon('opcao1.png')">
+            <img src="opcao2.png" alt="Twibbon 2" onclick="selectTwibbon('opcao2.png')">
+            <img src="opcao3.png" alt="Twibbon 3" onclick="selectTwibbon('opcao3.png')">
+            
+        </div>
+
+        <h4>Vai ficar assim:</h4>
+        <div class="image-preview">
+            <img id="profilePicture" src="default-avatar.png" alt="Foto de perfil" class="profile">
+            <img id="twibbonOverlay" src="opcao1.png" alt="design" class="twibbon">
+        </div>
+
+
+        <button onclick="downloadImage()"><h2>3. Baixe a imagem aqui</h2></button>
+        
+        <p class="cinza">ELEICAO 2024 ANDRESA DA SILVA FURINI VEREADOR / 
+
+            PROPAGANDA ELEITORAL - CNPJ: 56.357.362/0001-99 
+            
+            PSB - 40</p>
+
+    </article>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
